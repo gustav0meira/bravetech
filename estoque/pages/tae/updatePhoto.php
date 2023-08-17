@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $conn->close();
     } else {
-        echo "Ocorreu um erro ao fazer o upload do arquivo.";
+        echo "Ocorreu um erro ao fazer o upload do arquivo: " . $_FILES["profile_pp"]["error"];
     }
 }
 ?>
