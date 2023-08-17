@@ -30,7 +30,7 @@
 	</div>
 	<div class="alignCenter">
 		<h1><?php echo $app_name ?></h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+		<p>virtute plusquam auro</p>
 	</div>
 </body>
 </html>
