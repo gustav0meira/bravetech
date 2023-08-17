@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $row = $result->fetch_assoc();
 
-        $_SESSION['usuario_logado'] == true;
+        $_SESSION['usuario_logado'] = true;
         $_SESSION['id'] = $row['id'];
         $_SESSION['nome'] = $row['nome'];
         $_SESSION['sobrenome'] = $row['sobrenome'];

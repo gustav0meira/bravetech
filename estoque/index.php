@@ -29,7 +29,7 @@
 		<a href="./login"><label>Entrar</label></a>
 	</div>
 	<div class="alignCenter">
-		<h1>Estoque 4.0</h1>
+		<h1><?php echo $app_name ?></h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 	</div>
 </body>
