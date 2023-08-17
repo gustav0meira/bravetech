@@ -4,6 +4,8 @@
 	require "../../app/vars.php";
 	require "../../app/cdn.php";
 
+	session_start(); if (!isset($_SESSION["usuario_logado"])) { header("Location: https://www.google.com"); exit(); }
+
 	$sql = "SELECT COUNT(*) AS total FROM alunos WHERE sts_estoque = 1";
 	$result = $conn->query($sql);
 

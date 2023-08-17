@@ -117,7 +117,7 @@
 			transform: translateY(-50%);
 		}
 		button.add{
-			background: #8774e1;
+			background: #00000030;
 			color: white;
 			padding: 10px 15;
 			border-radius: 15px;
@@ -144,6 +144,24 @@
 			color: #FFFFFF50;
 			margin-top: 10px;
 			padding: 0 10px !important;
+		}
+		.profilePic{
+			width: 100%;
+			padding-bottom: 100%;
+			background-size: cover !important;
+			background-position: center center !important;
+			border-radius: 15px;
+		}
+		@media only screen and (max-width: 768px) {
+			#profilePP{
+				margin-bottom: 0px !important;
+			}
+			form{
+				margin-bottom: 15px !important;
+			}
+			.profilePic{
+				margin-bottom: 20px !important;
+			}
 		}
 	</style>
 </head>
@@ -179,6 +197,27 @@
 					</div>
 				</div>
 			</form>
+			<div class="row">
+				<div class="col-12">
+					<label style="margin: 20px 0px;">Foto de Perfil</label>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-2">
+						<div style="background: url('../../assets/pp/<?php echo $student['profile_pp'] ?>');" class="profilePic"></div>
+					</div>
+					<div class="col-12 col-lg-8">
+						<form id="ppForm" action="updatePhoto.php" method="post" enctype="multipart/form-data">
+						    <input type="hidden" name="student_id" value="<?php echo $student['id']; ?>">
+						    <label for="profilePP">Nova Foto:</label>
+						    <input id="profilePP" type="file" name="profile_pp"><br>
+						</form>
+					</div>
+					<div class="col-12 col-lg-2">
+						<label>ﾠ</label><br>
+						<button form="ppForm" style="width: 100%;" class="add">SALVAR FOTO</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">

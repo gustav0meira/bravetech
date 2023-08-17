@@ -4,6 +4,8 @@
 	require "../../app/vars.php";
 	require "../../app/cdn.php";
 
+	session_start(); if (!isset($_SESSION["usuario_logado"])) { header("Location: https://www.google.com"); exit(); }
+
 ?>
 
 <!DOCTYPE html>
