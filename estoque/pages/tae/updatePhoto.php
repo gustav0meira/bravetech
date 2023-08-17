@@ -20,7 +20,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $conn->close();
     } else {
-        echo "Ocorreu um erro ao fazer o upload do arquivo: " . $_FILES["profile_pp"]["error"];
+        $uploadError = $_FILES["profile_pp"]["error"];
+        $uploadErrors = array(
+            UPLOAD_ERR_OK => "Sem erro.",
+            UPLOAD_ERR_INI_SIZE => "O arquivo enviado excede o limite definido na diretiva upload_max_filesize do php.ini.",
+            UPLOAD_ERR_FORM_SIZE => "O arquivo enviado excede o limite definido no formulário HTML.",
+            UPLOAD_ERR_PARTIAL => "O upload do arquivo foi feito parcialmente.",
+            UPLOAD_ERR_NO_FILE => "Nenhum arquivo foi enviado.",
+            UPLOAD_ERR_NO_TMP_DIR => "Falta uma pasta temporária.",
+            UPLOAD_ERR_CANT_WRITE => "Falha ao escrever o arquivo em disco.",
+            UPLOAD_ERR_EXTENSION => "Uma extensão PHP interrompeu o upload do arquivo."
+        );
+
+        $errorMessage = isset($uploadErrors[$uploadError]) ? $uploadErrors[$uploadError] : "Erro desconhecido no upload do arquivo.";
+
+        echo "Ocorreu um erro ao fazer o upload do arquivo: $errorMessage";
     }
 }
 ?>
