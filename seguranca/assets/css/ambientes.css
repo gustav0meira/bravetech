@@ -1,0 +1,24 @@
+.module{
+	border-radius: 15px;
+	background: #131013;
+	cursor: pointer;
+}
+
+.module .image{
+	width: 100%;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.module .content{
+	padding: 15px 20px;
+	font-weight: 300 !important;
+}
+
+.module p{
+	margin: 0px;
+	padding: 0px;
+}
+
+.module .fa-eye{
+	color: #FFFFFF80;
+}

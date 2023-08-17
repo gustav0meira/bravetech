@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+	background: #090709 !important;
+	font-family: Poppins, Helvetica;
+}
+
+.align{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+div.top_content{
+	padding: 25px 25px 10px 25px;
+}
+
+img.logo{
+	width: 100px;
+}
+
+div.top_content p{
+	color: white;
+	margin-top: 20px;
+	font-size: 0.8rem !important;
+	font-weight: 300 !important;
+}
+
+div.middle_modules{
+	padding: 10px 25px;
+}
+
+div.middle_modules div.middle_box{
+	background: #1a1a1a;
+	padding: 16px;
+	border-left: 5px solid #2d2d2d;
+	color: white;
+	font-size: 0.7rem;
+	font-weight: 300;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+.middle_box i{
+	padding: 12px;
+	font-size: 1rem !important;
+	border-radius: 13px;
+	background: white;
+	color: #00000090;
+}
+
+.middle_box label.title_top{
+	font-size: 0.7rem !important;
+	font-weight: 300;
+	color: #FFFFFF60;
+}
+
+.middle_box label.title_bottom{
+	font-size: 1.2rem !important;
+	font-weight: 400;
+}
+
+.map{
+	width: 430px;
+	padding-bottom: 370px !important;
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+.cuiaba{
+	background: url('../img/cb-map.png');
+}
+
+.school_box{
+	background: #1f1f1f;
+	width: 100%;
+	height: 330px;
+	border-radius: 15px;
+}
+
+.school_content{
+	padding: 30px 35px;
+}
+
+.school_list .fa-eye{
+	color: #FFFFFF90;
+}
+
+.school_list{
+	color: white;
+}
+
+.school_list label.school_name{
+	font-size: 1rem !important;
+	font-weight: 300;
+}
+
+.school_list label.school_description{
+	font-size: 0.8rem !important;
+	font-weight: 300;
+	color: #FFFFFF70;
+	margin-top: 5px;
+}
+
+p.school_description{
+	font-size: 1rem !important;
+	font-weight: 300;
+	color: #ffffffdb;
+	margin-top: 5px;
+}
+
+.title_module{
+	color: #FFFFFF40;
+	font-size: 0.8rem !important;
+}
+
+.video_cam{
+	margin-bottom: 25px;
+	border-radius: 10px;
+}
+
+.enter{
+	background: #9264CD;
+	padding: 15px;
+	border-radius: 15px;
+	border: none !important;
+	margin-top: 20px;
+	color: white;
+	width: 100%;
+}
+
+.export{
+	position: absolute;
+	font-size: 0.8rem !important;
+	font-weight: 300 !important;
+	top: 370px;
+	right: 145;
+	background: #9264CD;
+	padding: 6px;
+	border-radius: 10px;
+	border: none !important;
+	margin-top: 20px;
+	color: white;
+	width: 200px;
+}
+
+.pin{
+	position: relative;
+	top: -225;
+	cursor: pointer;
+	left: -100;
+	width: 15px;
+}
+
+.hide{
+	display: block !important;
+}
+
+.hidden{
+	display: none !important;
+}
